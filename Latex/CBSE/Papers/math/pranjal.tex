@@ -5,41 +5,38 @@
 \usepackage{amsmath}
 \usepackage{caption}
 \usepackage{hyperref}
-
+\usepackage{fullpage}
 \begin{document}
 
 
-\begin{minipage}{0.2\textwidth}
+\begin{minipage}{0.2\columnwidth}
 \includegraphics[width=\linewidth]{iiitb_comet_logo.jpg}
 \end{minipage}
 \hfill
-\begin{minipage}{0.8\textwidth}
+\begin{minipage}{0.8\columnwidth}
 \raggedleft
 {Name:} PRANJAL ROY\\
 {COMET ID:} COMETFWC062\\
 {Date:} \today
 \end{minipage}
 
-\vspace{0.5cm}
-\hrule
-\vspace{0.5cm}
+
 
 \begin{center}
-{\Huge CHAPTER 8}
+\textbf\large {CHAPTER 8}
 
 \vspace{10pt}
-{\Large INTRODUCTION TO TRIGONOMETRY}\\[6pt]
+\textbf\large{INTRODUCTION TO TRIGONOMETRY}
 
 \end{center}
 
-\hrule
-\vspace{10pt}
+
 
 \begin{center}
-\textit{
+
 There is perhaps nothing which so occupies the\\
 middle position of mathematics as trigonometry.
-}\\[6pt]
+
 {-- J.F. Herbart (1890)}
 \end{center}
 
@@ -52,23 +49,23 @@ You have already studied about triangles, and in particular, right triangles, in
 \begin{enumerate}
 \item Suppose the students of a school are visiting Qutub Minar. Now, if a student is looking at the top of the Minar, a right triangle can be imagined to be made, as shown in Fig. 8.1. Can the student find out the height of the Minar, without actually measuring it?
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
-\includegraphics[width=0.35\textwidth]{F1.png}
+\includegraphics[width=0.35\columnwidth]{F1.png}
 \caption*{Fig. 8.1}
 \end{figure}
 
 \item Suppose a girl is sitting on the balcony of her house located on the bank of a river. She is looking down at a flower pot placed on a stair of a temple situated nearby on the other bank of the river. A right triangle is imagined to be made in this situation as shown in Fig. 8.2. If you know the height at which the person is sitting, can you find the width of the river?
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
-\includegraphics[width=0.35\textwidth]{F2.png}
+\includegraphics[width=0.35\columnwidth]{F2.png}
 \caption*{Fig. 8.2}
 \end{figure}
 
 \item Suppose a hot air balloon is flying in the air. A girl happens to spot the balloon in the sky and runs to her mother to tell her about it. Her mother rushes out of the house to look at the balloon.Now when the girl had spotted the balloon intially it was at point A.When both the mother and daughter came out to see it, it had already travelled to another point B. Can you find the altitude of B from the ground?
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
-\includegraphics[width=0.35\textwidth]{F3.png}
+\includegraphics[width=0.35\columnwidth]{F3.png}
 \caption*{Fig. 8.3}
 \end{figure}
 \end{enumerate}
@@ -83,62 +80,73 @@ In Section 8.1, you have seen some right triangles imagined to be formed in diff
 
 Let us take a right triangle ABC as shown in Fig. 8.4.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
-\includegraphics[width=0.35\textwidth]{F4.png}
+\includegraphics[width=0.35\columnwidth]{F4.png}
 \caption*{Fig. 8.4}
 \end{figure}
 Here, $\angle CAB$ (or, in brief, angle $A$) is an acute angle. Note the position of the side $BC$ with respect to angle $A$. It faces $\angle A$. We call it the side opposite to angle $A$. $AC$ is the hypotenuse of the right triangle and the side $AB$ is a part of $\angle A$. So, we call it the side adjacent to angle $A$.
 \newpage
 Note that the position of sides change when you consider angle C in place of A (see Fig. 8.5).
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
-\includegraphics[width=0.35\textwidth]{F5.png}
+\includegraphics[width=0.35\columnwidth]{F5.png}
 \caption*{Fig. 8.5}
 \end{figure}
 You have studied the concept of ‘ratio’ in your earlier classes. We now define certain ratios involving the sides of a right triangle, and call
 them trigonometric ratios.
 
 The trigonometric ratios of the angle A in right triangle ABC (see Fig. 8.4) are defined as follows :
+\begin{align}
+\sin \angle A = \frac{\text{side opposite to angle } A}{\text{hypotenuse}}
+= \frac{BC}{AC}
+\end{align}
 
-$\sin \angle A
-= \frac{\text{side opposite to angle } A}{\text{hypotenuse}}
-= \frac{BC}{AC}$
-
-$\cos \angle A
+\begin{align}
+\cos \angle A
 = \frac{\text{side adjacent to angle } A}{\text{hypotenuse}}
-= \frac{AB}{AC}$
+= \frac{AB}{AC}
+\end{align}
 
-$\tan \angle A
+\begin{align}
+\tan \angle A
 = \frac{\text{side opposite to angle } A}{\text{side adjacent to angle } A}
-= \frac{BC}{AB}$
+= \frac{BC}{AB}
+\end{align}
 
-$\csc \angle A
+\begin{align}
+\cos \angle A
 = \frac{1}{\sin \angle A}
 = \frac{\text{hypotenuse}}{\text{side opposite to angle } A}
-= \frac{AC}{BC}$
+= \frac{AC}{BC}
+\end{align}
 
-$\sec \angle A
+\begin{align}
+\sec \angle A
 = \frac{1}{\cos \angle A}
 = \frac{\text{hypotenuse}}{\text{side adjacent to angle } A}
-= \frac{AC}{AB}$
+= \frac{AC}{AB}
+\end{align}
 
-$\cot \angle A
+\begin{align}
+\cot \angle A
 = \frac{1}{\tan \angle A}
 = \frac{\text{side adjacent to angle } A}{\text{side opposite to angle } A}
-= \frac{AB}{BC}$
-
+= \frac{AB}{BC}
+\end{align}
 
 \vspace{10pt}
 The ratios defined above are abbreviated as sin A, cos A, tan A, cosec A, sec A and cot A respectively. Note that the ratios cosec A, sec A and cot A are respectively, the reciprocals of the ratios sin A, cos A and tan A.
 
 Also, observe that
-$\tan A = \frac{BC}{AB}
+\begin{align}
+    \tan A = \frac{BC}{AB}
 = \frac{\dfrac{BC}{AC}}{\dfrac{AB}{AC}}
 = \frac{\sin A}{\cos A}
 \quad \text{and} \quad
-\cot A = \frac{\cos A}{\sin A}.$
+\cot A = \frac{\cos A}{\sin A}.
+\end{align}
 
 
 So, the trigonometric ratios of an acute angle in a right triangle express the relationship between the angle and the length of its sides.
@@ -151,128 +159,147 @@ triangle? (See Fig. 8.5)
 {Example 4 :} In a right triangle $ABC$, right-angled at $B$, if $\tan A = 1$, then verify that
 $2 \sin A \cos A = 1.$
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
-\includegraphics[width=0.35\textwidth]{F6.png}
-\caption*{Fig. 8.11}
+  \includegraphics[width=0.4\columnwidth]{F6.png}
+ \caption*{Fig. 8.11}
 \end{figure}
 
-
 {Solution :} In $\triangle ABC$,
-$\tan A = \frac{BC}{AB} = 1 \quad (\text{see Fig. 8.11})$
-
-i.e.,
-
-$BC = AB$
-
-Let $AB = BC = k$, where $k$ is a positive number.
-
-Now,
-
-$AC = \sqrt{AB^2 + BC^2}$
-
-$= \sqrt{(k)^2 + (k)^2} = k\sqrt{2}$
+$\tan A = \frac{BC}{AB} = 1 \quad (\text{see Fig. 8.11})$ i.e., $BC = AB$ Let $AB = BC = k$, where $k$ is a positive number. Now,
+\begin{align}
+    AC = \sqrt{AB^2 + BC^2} = \sqrt{(k)^2 + (k)^2} = k\sqrt{2}
+\end{align}
 
 Therefore,
-
-$\sin A = \frac{BC}{AC} = \frac{1}{\sqrt{2}}
+\begin{align}
+    \sin A = \frac{BC}{AC} = \frac{1}{\sqrt{2}}
 \quad \text{and} \quad
-\cos A = \frac{AB}{AC} = \frac{1}{\sqrt{2}}$
+\cos A = \frac{AB}{AC} = \frac{1}{\sqrt{2}}
+\end{align}
+
 
 So,
 
-$2 \sin A \cos A
+\begin{align}
+    \sin A \cos A
 = 2 \left(\frac{1}{\sqrt{2}}\right)\left(\frac{1}{\sqrt{2}}\right)
-= 1$
+= 1
+\end{align}
 
 which is the required value.
 
 \vspace{10pt}
 {Example 5 :} In $\triangle OPQ$, right-angled at $P$, $OP = 7$ cm and $OQ - PQ = 1$ cm (see Fig. 8.12). Determine the values of $\sin Q$ and $\cos Q$.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
-\includegraphics[width=0.2\textwidth]{F7.png}
+\includegraphics[width=0.2\columnwidth]{F7.png}
 \caption*{Fig. 8.12}
 \end{figure}
 
-{Solution :} In $\triangle OPQ$, we have
-
-$OQ^2 = OP^2 + PQ^2$
-
+{Solution :} In $\triangle OPQ$, we have $OQ^2 = OP^2 + PQ^2$
+i.e.,
+\begin{align}
+    (1 + PQ)^2 = OP^2 + PQ^2 \quad (\text{Why?})
+\end{align}
+i.e.,
+\begin{align}
+    1 + PQ^2 + 2PQ = OP^2 + PQ^2
+\end{align}
+i.e.,
+\begin{align}
+1 + 2PQ = 7^2 \quad (\text{Why?})
+\end{align}
 i.e.,
 
-$(1 + PQ)^2 = OP^2 + PQ^2 \quad (\text{Why?})$
-
-i.e.,
-
-$1 + PQ^2 + 2PQ = OP^2 + PQ^2$
-
-i.e.,
-
-$1 + 2PQ = 7^2 \quad (\text{Why?})$
-
-i.e.,
-
-$PQ = 24 \text{ cm and } OQ = 1 + PQ = 25 \text{ cm}$
-
+\begin{align}
+PQ = 24 \text{ cm and } OQ = 1 + PQ = 25 \text{ cm}
+\end{align}
 So,
 
-$\sin Q = \frac{7}{25}
-\quad \text{and} \quad
-\cos Q = \frac{24}{25}.$
+\begin{align}
+    \sin Q = \frac{7}{25}\quad \text{and} \quad\cos Q = \frac{24}{25}.
+\end{align}
 
 \vspace{10pt}
 {Example 6 :} In $\triangle ABC$, right-angled at $B$, $AB = 5$ cm and $\angle ACB = 30^\circ$ (see Fig. 8.19). Determine the lengths of the sides $BC$ and $AC$.
-\begin{figure}[h]
+
+\begin{figure}[!h]
 \centering
-\includegraphics[width=0.35\textwidth]{F8.png}
+\includegraphics[width=0.35\columnwidth]{F8.png}
 \caption*{Fig. 8.19}
 \end{figure}
 
 {Solution :}  To find the length of the side BC, we will
-choose the trigonometric ratio involving BC and the given side AB. Since BC is the side adjacent to angle C and AB is the side opposite to angle C, therefore $\frac{AB}{BC} = \tan C$
-i.e.,
-$\frac{5}{BC} = \tan 30^\circ = \frac{1}{\sqrt{3}}$
-
-which gives
-$BC = 5\sqrt{3} \text{ cm}$
-To find the length of the side $AC$, we consider
-$\sin 30^\circ = \frac{AB}{AC} \quad (\text{Why?})$
+choose the trigonometric ratio involving BC and the given side AB. Since BC is the side adjacent to angle C and AB is the side opposite to angle C, therefore 
+\begin{align}
+    \frac{AB}{BC} = \tan C
+\end{align}
 
 i.e.,
-$\frac{1}{2} = \frac{5}{AC}$
+\begin{align}
+    \frac{5}{BC} = \tan 30^\circ = \frac{1}{\sqrt{3}}
+\end{align}
+
+
+which gives $BC = 5\sqrt{3} \text{ cm}$ To find the length of the side $AC$, we consider
+
+\begin{align}
+    \sin 30^\circ = \frac{AB}{AC} \quad (\text{Why?})
+\end{align}
+
+
 i.e.,
 
-$AC = 10 \text{ cm}$
-
+\begin{align}
+    \frac{1}{2} = \frac{5}{AC}
+\end{align}
+i.e.,
+\begin{align}
+    AC = 10 \text{ cm}
+\end{align}
 
 Note that alternatively we could have used Pythagoras theorem to determine the third side in the example above,
 
 i.e.,
-$AC = \sqrt{AB^2 + BC^2}
-= \sqrt{5^2 + (5\sqrt{3})^2}\ \text{cm}
-= 10 \text{ cm}.$
+
+\begin{align}
+    AC = \sqrt{AB^2 + BC^2} = \sqrt{5^2 + (5\sqrt{3})^2}\ \text{cm} 
+    = 10 \text{ cm}.
+\end{align}
 
 \vspace{10pt}
 {Example 7 :} In $\triangle PQR$, right-angled at $Q$ (see Fig. 8.20), $PQ = 3$ cm and $PR = 6$ cm. Determine $\angle QPR$ and $\angle PRQ$.
-\begin{figure}[h]
+
+\begin{figure}[!h]
 \centering
-\includegraphics[width=0.4\textwidth]{F9.png}
+\includegraphics[width=0.4\columnwidth]{F9.png}
 \caption*{Fig. 8.20}
 \end{figure}
 
 {Solution :} Given $PQ = 3$ cm and $PR = 6$ cm.
 Therefore,
-$\frac{PQ}{PR} = \sin R$
+\begin{align}
+    \frac{PQ}{PR} = \sin R
+\end{align}
+
 or
-$\sin R = \frac{3}{6} = \frac{1}{2}$
+\begin{align}
+    \sin R = \frac{3}{6} = \frac{1}{2}
+\end{align}
+
 So,
-$\angle PRQ = 30^\circ$
+\begin{align}
+    \angle PRQ = 30^\circ
+\end{align}
+
 and therefore,
-$\angle QPR = 60^\circ \quad (\text{Why?})$
+\begin{align}
+    \angle QPR = 60^\circ \quad (\text{Why?})
+\end{align}
+
 
 You may note that if one of the sides and any other part (either an acute angle or any side) of a right triangle is known, the remaining sides and angles of the triangle can be determined
 
 \end{document}
-
